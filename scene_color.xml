@@ -1,0 +1,118 @@
+<mujoco model="RMUC2027_colored">
+  <compiler angle="degree" meshdir="meshes"/>
+  <statistic center="14 7.5 1" extent="22"/>
+  <option timestep="0.005" gravity="0 0 -9.81"/>
+  <asset>
+    <mesh name="field_mesh_000" file="place/field_color_000.obj" inertia="shell"/>
+    <mesh name="field_mesh_001" file="place/field_color_001.obj" inertia="shell"/>
+    <mesh name="field_mesh_002" file="place/field_color_002.obj" inertia="shell"/>
+    <mesh name="field_mesh_003" file="place/field_color_003.obj" inertia="shell"/>
+    <mesh name="field_mesh_004" file="place/field_color_004.obj" inertia="shell"/>
+    <mesh name="field_mesh_005" file="place/field_color_005.obj" inertia="shell"/>
+    <mesh name="field_mesh_006" file="place/field_color_006.obj" inertia="shell"/>
+    <mesh name="field_mesh_007" file="place/field_color_007.obj" inertia="shell"/>
+    <mesh name="field_mesh_008" file="place/field_color_008.obj" inertia="shell"/>
+    <mesh name="field_mesh_009" file="place/field_color_009.obj" inertia="shell"/>
+    <mesh name="field_mesh_010" file="place/field_color_010.obj" inertia="shell"/>
+    <mesh name="field_mesh_011" file="place/field_color_011.obj" inertia="shell"/>
+    <mesh name="field_mesh_012" file="place/field_color_012.obj" inertia="shell"/>
+    <mesh name="field_mesh_013" file="place/field_color_013.obj" inertia="shell"/>
+    <mesh name="field_mesh_014" file="place/field_color_014.obj" inertia="shell"/>
+    <mesh name="field_mesh_015" file="place/field_color_015.obj" inertia="shell"/>
+    <mesh name="field_mesh_016" file="place/field_color_016.obj" inertia="shell"/>
+    <mesh name="field_mesh_017" file="place/field_color_017.obj" inertia="shell"/>
+    <mesh name="field_mesh_018" file="place/field_color_018.obj" inertia="shell"/>
+    <mesh name="field_mesh_019" file="place/field_color_019.obj" inertia="shell"/>
+    <mesh name="field_mesh_020" file="place/field_color_020.obj" inertia="shell"/>
+    <mesh name="field_mesh_021" file="place/field_color_021.obj" inertia="shell"/>
+    <mesh name="field_mesh_022" file="place/field_color_022.obj" inertia="shell"/>
+    <mesh name="field_mesh_023" file="place/field_color_023.obj" inertia="shell"/>
+    <mesh name="field_mesh_024" file="place/field_color_024.obj" inertia="shell"/>
+    <mesh name="field_mesh_025" file="place/field_color_025.obj" inertia="shell"/>
+    <mesh name="field_mesh_026" file="place/field_color_026.obj" inertia="shell"/>
+    <mesh name="field_mesh_027" file="place/field_color_027.obj" inertia="shell"/>
+    <mesh name="field_mesh_028" file="place/field_color_028.obj" inertia="shell"/>
+    <mesh name="field_mesh_029" file="place/field_color_029.obj" inertia="shell"/>
+    <mesh name="field_mesh_030" file="place/field_color_030.obj" inertia="shell"/>
+    <mesh name="field_mesh_031" file="place/field_color_031.obj" inertia="shell"/>
+    <mesh name="field_mesh_032" file="place/field_color_032.obj" inertia="shell"/>
+    <mesh name="field_mesh_033" file="place/field_color_033.obj" inertia="shell"/>
+    <mesh name="field_mesh_034" file="place/field_color_034.obj" inertia="shell"/>
+    <mesh name="field_mesh_035" file="place/field_color_035.obj" inertia="shell"/>
+    <mesh name="field_mesh_036" file="place/field_color_036.obj" inertia="shell"/>
+    <mesh name="field_mesh_037" file="place/field_color_037.obj" inertia="shell"/>
+    <mesh name="field_mesh_038" file="place/field_color_038.obj" inertia="shell"/>
+    <mesh name="field_mesh_039" file="place/field_color_039.obj" inertia="shell"/>
+    <mesh name="field_mesh_040" file="place/field_color_040.obj" inertia="shell"/>
+    <mesh name="field_mesh_041" file="place/field_color_041.obj" inertia="shell"/>
+
+    <!-- 飞镖模型 -->
+    <mesh name="dart_mesh" file="dart/dart_visual.stl" scale="0.001 0.001 0.001"/>
+  </asset>
+  <worldbody>
+    <light name="sun" type="directional" pos="14 7.5 18" dir="0 0 -1" diffuse="0.9 0.9 0.9" ambient="0.25 0.25 0.25" specular="0.1 0.1 0.1" castshadow="false"/>
+    <geom name="field_geom_000" type="mesh" mesh="field_mesh_000" rgba="1.0000 0.0000 0.0000 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_001" type="mesh" mesh="field_mesh_001" rgba="0.6500 0.6500 0.6500 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_002" type="mesh" mesh="field_mesh_002" rgba="1.0000 1.0000 1.0000 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_003" type="mesh" mesh="field_mesh_003" rgba="0.0000 0.0000 1.0000 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_004" type="mesh" mesh="field_mesh_004" rgba="0.5210 0.5210 0.5210 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_005" type="mesh" mesh="field_mesh_005" rgba="0.0055 0.0003 0.3104 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_006" type="mesh" mesh="field_mesh_006" rgba="1.0000 0.0021 0.0021 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_007" type="mesh" mesh="field_mesh_007" rgba="0.5776 0.5776 0.4564 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_008" type="mesh" mesh="field_mesh_008" rgba="0.0331 0.0331 0.0331 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_009" type="mesh" mesh="field_mesh_009" rgba="0.0097 0.0097 0.0097 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_010" type="mesh" mesh="field_mesh_010" rgba="0.0000 0.0000 0.0000 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_011" type="mesh" mesh="field_mesh_011" rgba="0.3050 0.3050 0.3050 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_012" type="mesh" mesh="field_mesh_012" rgba="0.6775 0.7854 0.8543 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_013" type="mesh" mesh="field_mesh_013" rgba="0.0517 0.0517 0.0517 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_014" type="mesh" mesh="field_mesh_014" rgba="0.4919 0.1873 0.0890 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_015" type="mesh" mesh="field_mesh_015" rgba="0.1322 0.1308 0.3685 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_016" type="mesh" mesh="field_mesh_016" rgba="0.0505 0.3104 0.3547 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_017" type="mesh" mesh="field_mesh_017" rgba="0.3185 1.0000 0.3185 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_018" type="mesh" mesh="field_mesh_018" rgba="0.8073 0.5542 0.1128 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_019" type="mesh" mesh="field_mesh_019" rgba="0.0000 1.0000 0.0000 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_020" type="mesh" mesh="field_mesh_020" rgba="0.0529 0.0529 0.0529 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_021" type="mesh" mesh="field_mesh_021" rgba="0.0482 0.2307 0.8879 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_022" type="mesh" mesh="field_mesh_022" rgba="0.4064 0.0000 0.2429 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_023" type="mesh" mesh="field_mesh_023" rgba="0.7453 0.8879 1.0000 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_024" type="mesh" mesh="field_mesh_024" rgba="0.1274 0.1274 0.1274 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_025" type="mesh" mesh="field_mesh_025" rgba="0.0072 0.0100 0.0116 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_026" type="mesh" mesh="field_mesh_026" rgba="0.0742 0.0742 0.0742 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_027" type="mesh" mesh="field_mesh_027" rgba="0.1626 0.0174 0.0174 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_028" type="mesh" mesh="field_mesh_028" rgba="0.0054 0.9573 0.0051 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_029" type="mesh" mesh="field_mesh_029" rgba="0.0000 1.0000 1.0000 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_030" type="mesh" mesh="field_mesh_030" rgba="0.0183 0.0026 0.0000 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_031" type="mesh" mesh="field_mesh_031" rgba="1.0000 1.0000 0.8879 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_032" type="mesh" mesh="field_mesh_032" rgba="0.0003 0.0003 0.0003 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_033" type="mesh" mesh="field_mesh_033" rgba="0.0160 0.0685 0.5149 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_034" type="mesh" mesh="field_mesh_034" rgba="0.5583 0.5271 0.4969 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_035" type="mesh" mesh="field_mesh_035" rgba="0.3185 0.3185 0.3185 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_036" type="mesh" mesh="field_mesh_036" rgba="0.0497 0.0497 0.0497 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_037" type="mesh" mesh="field_mesh_037" rgba="0.1473 0.1473 0.1473 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_038" type="mesh" mesh="field_mesh_038" rgba="0.6757 0.6055 0.4696 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_039" type="mesh" mesh="field_mesh_039" rgba="0.4020 0.4564 0.5457 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_040" type="mesh" mesh="field_mesh_040" rgba="0.2234 0.1329 0.0116 1.0000" contype="0" conaffinity="0"/>
+    <geom name="field_geom_041" type="mesh" mesh="field_mesh_041" rgba="0.0923 0.0529 0.0015 1.0000" contype="0" conaffinity="0"/>
+    <geom name="temporary_floor" type="plane" pos="14 7.5 -0.30" size="14 8 0.1" rgba="0.10 0.10 0.12 1"/>
+
+    <!-- ================= 飞镖 ================= -->
+    <!-- 飞镖刚体 -->
+    <body name="dart_preview" pos="1 14.2 0.75">
+
+    <!-- 自由关节：允许飞镖自由运动 -->
+    <freejoint name="dart_free"/>
+    <!-- 飞镖质量和转动惯量 -->
+    <inertial pos="0 0 0" mass="0.3" diaginertia="0.001 0.001 0.0001"/>
+
+    <!-- 真实飞镖：只负责显示 -->
+    <geom name="dart_visual" type="mesh" mesh="dart_mesh" rgba="1 0.4 0.1 1" contype="0" conaffinity="0"/>
+
+    <!-- 圆柱体：只负责物理碰撞，不参与画面显示 -->
+    <geom name="dart_collision" type="cylinder" size="0.015 0.10" contype="1" conaffinity="1" rgba="1 1 1 0" group="3"/>
+
+    <!-- 镖头机载摄像头 -->
+    <camera name="dart_fpv" pos="0 0 0.108" quat="0 0.70710678 -0.70710678 0" fovy="70"/>
+    </body>
+
+  </worldbody>
+</mujoco>
