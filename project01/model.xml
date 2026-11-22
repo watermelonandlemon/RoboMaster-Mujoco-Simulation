@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mujoco model="RMUC2027">
+  <compiler angle="degree" meshdir="meshes"/>
+  <statistic center="14 7.5 1" extent="22"/>
+  <option timestep="0.0002" gravity="0 0 -9.81" integrator="implicitfast"/>
+  <asset>
+    <!-- 飞镖模型 -->
+    <mesh name="dart_mesh" file="dart/dart_visual.stl" scale="0.001 0.001 0.001"/>
+    <!-- 绿灯模型 -->
+    <material name="green_glow" rgba="0.0054 0.9573 0.0051 1" emission="1.0" specular="0.1" shininess="0.5"/>
+    <!-- 静止场地 -->
+    <mesh name="static_mesh_01" file="static/static_m01_CAD_1_0000_0_0000_0_0000.obj" inertia="shell"/>
+    <mesh name="static_mesh_02" file="static/static_m02_CAD_0_6500_0_6500_0_6500.obj" inertia="shell"/>
+    <mesh name="static_mesh_03" file="static/static_m03_CAD_1_0000_1_0000_1_0000.obj" inertia="shell"/>
+    <mesh name="static_mesh_04" file="static/static_m04_CAD_0_0000_0_0000_1_0000.obj" inertia="shell"/>
+    <mesh name="static_mesh_05" file="static/static_m05_CAD_0_5776_0_5776_0_4564.obj" inertia="shell"/>
+    <mesh name="static_mesh_06" file="static/static_m06_CAD_0_5210_0_5210_0_5210.obj" inertia="shell"/>
+    <mesh name="static_mesh_07" file="static/static_m07_CAD_0_0055_0_0003_0_3104.obj" inertia="shell"/>
+    <mesh name="static_mesh_08" file="static/static_m08_CAD_1_0000_0_0021_0_0021.obj" inertia="shell"/>
+    <mesh name="static_mesh_09" file="static/static_m09_CAD_0_0331_0_0331_0_0331.obj" inertia="shell"/>
+    <mesh name="static_mesh_10" file="static/static_m10_CAD_0_0097_0_0097_0_0097.obj" inertia="shell"/>
+    <mesh name="static_mesh_11" file="static/static_m11_CAD_0_0000_0_0000_0_0000.obj" inertia="shell"/>
+    <mesh name="static_mesh_12" file="static/static_m12_CAD_0_3050_0_3050_0_3050.obj" inertia="shell"/>
+    <mesh name="static_mesh_13" file="static/static_m13_CAD_0_6775_0_7854_0_8543.obj" inertia="shell"/>
+    <mesh name="static_mesh_14" file="static/static_m14_CAD_0_0517_0_0517_0_0517.obj" inertia="shell"/>
+    <mesh name="static_mesh_15" file="static/static_m15_CAD_0_4919_0_1873_0_0890.obj" inertia="shell"/>
+    <mesh name="static_mesh_16" file="static/static_m16_CAD_0_1322_0_1308_0_3685.obj" inertia="shell"/>
+    <mesh name="static_mesh_17" file="static/static_m17_CAD_0_0505_0_3104_0_3547.obj" inertia="shell"/>
+    <mesh name="static_mesh_18" file="static/static_m18_CAD_0_3185_1_0000_0_3185.obj" inertia="shell"/>
+    <mesh name="static_mesh_19" file="static/static_m19_CAD_0_8073_0_5542_0_1128.obj" inertia="shell"/>
+    <mesh name="static_mesh_20" file="static/static_m20_CAD_0_0000_1_0000_0_0000.obj" inertia="shell"/>
+    <mesh name="static_mesh_21" file="static/static_m21_CAD_0_0529_0_0529_0_0529.obj" inertia="shell"/>
+    <mesh name="static_mesh_22" file="static/static_m22_CAD_0_0482_0_2307_0_8879.obj" inertia="shell"/>
+    <mesh name="static_mesh_23" file="static/static_m23_CAD_0_4064_0_0000_0_2429.obj" inertia="shell"/>
+    <mesh name="static_mesh_24" file="static/static_m24_CAD_0_7453_0_8879_1_0000.obj" inertia="shell"/>
+    <mesh name="static_mesh_25" file="static/static_m25_CAD_0_1274_0_1274_0_1274.obj" inertia="shell"/>
+    <mesh name="static_mesh_26" file="static/static_m26_CAD_0_0072_0_0100_0_0116.obj" inertia="shell"/>
+    <mesh name="static_mesh_27" file="static/static_m27_CAD_0_0742_0_0742_0_0742.obj" inertia="shell"/>
+    <mesh name="static_mesh_28" file="static/static_m28_CAD_0_1626_0_0174_0_0174.obj" inertia="shell"/>
+    <mesh name="static_mesh_29" file="static/static_m29_CAD_0_0054_0_9573_0_0051.obj" inertia="shell"/>
+    <mesh name="static_mesh_30" file="static/static_m30_CAD_0_0000_1_0000_1_0000.obj" inertia="shell"/>
+    <mesh name="static_mesh_31" file="static/static_m31_CAD_0_0183_0_0026_0_0000.obj" inertia="shell"/>
+    <mesh name="static_mesh_32" file="static/static_m32_CAD_1_0000_1_0000_0_8879.obj" inertia="shell"/>
+    <mesh name="static_mesh_33" file="static/static_m33_CAD_0_0003_0_0003_0_0003.obj" inertia="shell"/>
+    <mesh name="static_mesh_34" file="static/static_m34_CAD_0_0160_0_0685_0_5149.obj" inertia="shell"/>
+    <mesh name="static_mesh_35" file="static/static_m35_CAD_0_5583_0_5271_0_4969.obj" inertia="shell"/>
+    <mesh name="static_mesh_36" file="static/static_m36_CAD_0_3185_0_3185_0_3185.obj" inertia="shell"/>
+    <mesh name="static_mesh_37" file="static/static_m37_CAD_0_0497_0_0497_0_0497.obj" inertia="shell"/>
+    <mesh name="static_mesh_38" file="static/static_m38_CAD_0_1473_0_1473_0_1473.obj" inertia="shell"/>
+    <mesh name="static_mesh_39" file="static/static_m39_CAD_0_6757_0_6055_0_4696.obj" inertia="shell"/>
+    <mesh name="static_mesh_40" file="static/static_m40_CAD_0_4020_0_4564_0_5457.obj" inertia="shell"/>
+    <!-- 基地镖靶(己方) -->
+    <mesh name="base_left_mesh_01" file="move1/move1_m01_CAD_0_0331_0_0331_0_0331.obj" inertia="shell"/>
+    <mesh name="base_left_mesh_02" file="move1/move1_m02_CAD_0_6500_0_6500_0_6500.obj" inertia="shell"/>
+    <mesh name="base_left_mesh_03" file="move1/move1_m03_CAD_0_0054_0_9573_0_0051.obj" inertia="shell"/>
+    <mesh name="base_left_mesh_04" file="move1/move1_m04_CAD_0_2234_0_1329_0_0116.obj" inertia="shell"/>
+    <mesh name="base_left_mesh_05" file="move1/move1_m05_CAD_0_0923_0_0529_0_0015.obj" inertia="shell"/>
+    <!-- 基地镖靶(目标) -->
+    <mesh name="base_right_mesh_01" file="move2/move2_m01_CAD_0_0331_0_0331_0_0331.obj" inertia="shell"/>
+    <mesh name="base_right_mesh_02" file="move2/move2_m02_CAD_0_6500_0_6500_0_6500.obj" inertia="shell"/>
+    <mesh name="base_right_mesh_03" file="move2/move2_m03_CAD_0_0054_0_9573_0_0051.obj" inertia="shell"/>
+    <mesh name="base_right_mesh_04" file="move2/move2_m04_CAD_0_2234_0_1329_0_0116.obj" inertia="shell"/>
+    <mesh name="base_right_mesh_05" file="move2/move2_m05_CAD_0_0923_0_0529_0_0015.obj" inertia="shell"/>
+  </asset>
+  <worldbody>
+    <!-- ================= 其他 ================= -->
+    <light name="sun" type="directional" pos="14 7.5 18" dir="0 0 -1" diffuse="1 1 1" ambient="0.25 0.25 0.25" specular="0.1 0.1 0.1" castshadow="false"/>
+    <body name="base_left_target" mocap="true" pos="0 0 0">
+      <!-- move1  基地镖靶(己方)  -->
+      <geom name="base_left_target_visual_01" type="mesh" mesh="base_left_mesh_01" contype="0" conaffinity="0" rgba="0.033100 0.033100 0.033100 1.000000"/>
+      <geom name="base_left_target_visual_02" type="mesh" mesh="base_left_mesh_02" contype="0" conaffinity="0" rgba="0.650000 0.650000 0.650000 1.000000"/>
+      <geom name="base_left_target_visual_03" type="mesh" mesh="base_left_mesh_03" contype="0" conaffinity="0" material="green_glow"/>
+      <geom name="base_left_target_visual_04" type="mesh" mesh="base_left_mesh_04" contype="0" conaffinity="0" rgba="0.223400 0.132900 0.011600 1.000000"/>
+      <geom name="base_left_target_visual_05" type="mesh" mesh="base_left_mesh_05" contype="0" conaffinity="0" rgba="0.092300 0.052900 0.001500 1.000000"/>
+      <geom name="dart_target_collision_base_left" type="box" pos="2.410106 7.5 1.32034" euler="0 27.5 0" size="0.07 0.07 0.01" contype="1" conaffinity="1" solref="0.001 0.8" solimp="0.95 0.99 0.001 0.5 2" rgba="0 1 0 0"/>
+    </body>
+    <body name="base_right_target" mocap="true" pos="0 0 0">
+      <!-- move2  基地镖靶(目标)  -->
+      <geom name="base_right_target_visual_01" type="mesh" mesh="base_right_mesh_01" contype="0" conaffinity="0" rgba="0.033100 0.033100 0.033100 1.000000"/>
+      <geom name="base_right_target_visual_02" type="mesh" mesh="base_right_mesh_02" contype="0" conaffinity="0" rgba="0.650000 0.650000 0.650000 1.000000"/>
+      <geom name="base_right_target_visual_03" type="mesh" mesh="base_right_mesh_03" contype="0" conaffinity="0" material="green_glow"/>
+      <geom name="base_right_target_visual_04" type="mesh" mesh="base_right_mesh_04" contype="0" conaffinity="0" rgba="0.223400 0.132900 0.011600 1.000000"/>
+      <geom name="base_right_target_visual_05" type="mesh" mesh="base_right_mesh_05" contype="0" conaffinity="0" rgba="0.092300 0.052900 0.001500 1.000000"/>
+      <geom name="dart_target_collision_1" type="box" pos="25.58828 7.5 1.32034" euler="0 -27.5 0" size="0.07 0.07 0.01" contype="1" conaffinity="1" solref="0.001 0.8" solimp="0.95 0.99 0.001 0.5 2" rgba="0 1 0 0"/>
+    </body>
+    <!-- static 静态场地 -->
+    <geom name="field_static_geom_01" type="mesh" mesh="static_mesh_01" contype="0" conaffinity="0" rgba="1.000000 0.000000 0.000000 1.000000"/>
+    <geom name="field_static_geom_02" type="mesh" mesh="static_mesh_02" contype="0" conaffinity="0" rgba="0.650000 0.650000 0.650000 1.000000"/>
+    <geom name="field_static_geom_03" type="mesh" mesh="static_mesh_03" contype="0" conaffinity="0" rgba="1.000000 1.000000 1.000000 1.000000"/>
+    <geom name="field_static_geom_04" type="mesh" mesh="static_mesh_04" contype="0" conaffinity="0" rgba="0.000000 0.000000 1.000000 1.000000"/>
+    <geom name="field_static_geom_05" type="mesh" mesh="static_mesh_05" contype="0" conaffinity="0" rgba="0.577600 0.577600 0.456400 1.000000"/>
+    <geom name="field_static_geom_06" type="mesh" mesh="static_mesh_06" contype="0" conaffinity="0" rgba="0.521000 0.521000 0.521000 1.000000"/>
+    <geom name="field_static_geom_07" type="mesh" mesh="static_mesh_07" contype="0" conaffinity="0" rgba="0.005500 0.000300 0.310400 1.000000"/>
+    <geom name="field_static_geom_08" type="mesh" mesh="static_mesh_08" contype="0" conaffinity="0" rgba="1.000000 0.002100 0.002100 1.000000"/>
+    <geom name="field_static_geom_09" type="mesh" mesh="static_mesh_09" contype="0" conaffinity="0" rgba="0.033100 0.033100 0.033100 1.000000"/>
+    <geom name="field_static_geom_10" type="mesh" mesh="static_mesh_10" contype="0" conaffinity="0" rgba="0.009700 0.009700 0.009700 1.000000"/>
+    <geom name="field_static_geom_11" type="mesh" mesh="static_mesh_11" contype="0" conaffinity="0" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <geom name="field_static_geom_12" type="mesh" mesh="static_mesh_12" contype="0" conaffinity="0" rgba="0.305000 0.305000 0.305000 1.000000"/>
+    <geom name="field_static_geom_13" type="mesh" mesh="static_mesh_13" contype="0" conaffinity="0" rgba="0.677500 0.785400 0.854300 1.000000"/>
+    <geom name="field_static_geom_14" type="mesh" mesh="static_mesh_14" contype="0" conaffinity="0" rgba="0.051700 0.051700 0.051700 1.000000"/>
+    <geom name="field_static_geom_15" type="mesh" mesh="static_mesh_15" contype="0" conaffinity="0" rgba="0.491900 0.187300 0.089000 1.000000"/>
+    <geom name="field_static_geom_16" type="mesh" mesh="static_mesh_16" contype="0" conaffinity="0" rgba="0.132200 0.130800 0.368500 1.000000"/>
+    <geom name="field_static_geom_17" type="mesh" mesh="static_mesh_17" contype="0" conaffinity="0" rgba="0.050500 0.310400 0.354700 1.000000"/>
+    <geom name="field_static_geom_18" type="mesh" mesh="static_mesh_18" contype="0" conaffinity="0" rgba="0.318500 1.000000 0.318500 1.000000"/>
+    <geom name="field_static_geom_19" type="mesh" mesh="static_mesh_19" contype="0" conaffinity="0" rgba="0.807300 0.554200 0.112800 1.000000"/>
+    <geom name="field_static_geom_20" type="mesh" mesh="static_mesh_20" contype="0" conaffinity="0" rgba="0.000000 1.000000 0.000000 1.000000"/>
+    <geom name="field_static_geom_21" type="mesh" mesh="static_mesh_21" contype="0" conaffinity="0" rgba="0.052900 0.052900 0.052900 1.000000"/>
+    <geom name="field_static_geom_22" type="mesh" mesh="static_mesh_22" contype="0" conaffinity="0" rgba="0.048200 0.230700 0.887900 1.000000"/>
+    <geom name="field_static_geom_23" type="mesh" mesh="static_mesh_23" contype="0" conaffinity="0" rgba="0.406400 0.000000 0.242900 1.000000"/>
+    <geom name="field_static_geom_24" type="mesh" mesh="static_mesh_24" contype="0" conaffinity="0" rgba="0.745300 0.887900 1.000000 1.000000"/>
+    <geom name="field_static_geom_25" type="mesh" mesh="static_mesh_25" contype="0" conaffinity="0" rgba="0.127400 0.127400 0.127400 1.000000"/>
+    <geom name="field_static_geom_26" type="mesh" mesh="static_mesh_26" contype="0" conaffinity="0" rgba="0.007200 0.010000 0.011600 1.000000"/>
+    <geom name="field_static_geom_27" type="mesh" mesh="static_mesh_27" contype="0" conaffinity="0" rgba="0.074200 0.074200 0.074200 1.000000"/>
+    <geom name="field_static_geom_28" type="mesh" mesh="static_mesh_28" contype="0" conaffinity="0" rgba="0.162600 0.017400 0.017400 1.000000"/>
+    <geom name="field_static_geom_29" type="mesh" mesh="static_mesh_29" contype="0" conaffinity="0" material="green_glow"/>
+    <geom name="field_static_geom_30" type="mesh" mesh="static_mesh_30" contype="0" conaffinity="0" rgba="0.000000 1.000000 1.000000 1.000000"/>
+    <geom name="field_static_geom_31" type="mesh" mesh="static_mesh_31" contype="0" conaffinity="0" rgba="0.018300 0.002600 0.000000 1.000000"/>
+    <geom name="field_static_geom_32" type="mesh" mesh="static_mesh_32" contype="0" conaffinity="0" rgba="1.000000 1.000000 0.887900 1.000000"/>
+    <geom name="field_static_geom_33" type="mesh" mesh="static_mesh_33" contype="0" conaffinity="0" rgba="0.000300 0.000300 0.000300 1.000000"/>
+    <geom name="field_static_geom_34" type="mesh" mesh="static_mesh_34" contype="0" conaffinity="0" rgba="0.016000 0.068500 0.514900 1.000000"/>
+    <geom name="field_static_geom_35" type="mesh" mesh="static_mesh_35" contype="0" conaffinity="0" rgba="0.558300 0.527100 0.496900 1.000000"/>
+    <geom name="field_static_geom_36" type="mesh" mesh="static_mesh_36" contype="0" conaffinity="0" rgba="0.318500 0.318500 0.318500 1.000000"/>
+    <geom name="field_static_geom_37" type="mesh" mesh="static_mesh_37" contype="0" conaffinity="0" rgba="0.049700 0.049700 0.049700 1.000000"/>
+    <geom name="field_static_geom_38" type="mesh" mesh="static_mesh_38" contype="0" conaffinity="0" rgba="0.147300 0.147300 0.147300 1.000000"/>
+    <geom name="field_static_geom_39" type="mesh" mesh="static_mesh_39" contype="0" conaffinity="0" rgba="0.675700 0.605500 0.469600 1.000000"/>
+    <geom name="field_static_geom_40" type="mesh" mesh="static_mesh_40" contype="0" conaffinity="0" rgba="0.402000 0.456400 0.545700 1.000000"/>
+
+
+    <!-- 目标前哨站的飞镖靶透明碰撞箱 -->
+    <geom name="dart_target_collision_2" type="box" pos="17.026113 11.401283 1.765951" euler="0 -27.5 0" size="0.07 0.07 0.01" contype="1" conaffinity="1" solref="0.001 0.8" solimp="0.95 0.99 0.001 0.5 2" rgba="0 1 0 0"/>
+
+    <!-- 透明地板 防止飞镖落入虚空 -->
+    <geom name="temporary_floor" type="plane" pos="14 7.5 -0.30" size="14 8 0.1" rgba="0.10 0.10 0.12 0"/>
+
+    <!-- ================= 飞镖 ================= -->
+    <body name="dart_preview" pos="1 14.2 0.75"> <!-- 飞镖刚体 -->
+      <freejoint name="dart_free"/> <!-- 自由关节 -->
+      <inertial pos="0 0 0" mass="0.3" diaginertia="0.001 0.001 0.0001"/> <!-- 飞镖质量和转动惯量估值 -->
+      <geom name="dart_visual" type="mesh" mesh="dart_mesh" rgba="1 0.4 0.1 1" contype="0" conaffinity="0"/> <!-- 真实显示镖 -->
+
+      <!-- 圆柱碰撞镖 -->
+      <geom name="dart_collision" type="cylinder" size="0.015 0.10" contype="1" conaffinity="1" solref="0.001 0.8" solimp="0.95 0.99 0.001 0.5 2" rgba="1 1 1 0"/>
+
+      <camera name="dart_fpv" pos="0 0 0.108" quat="0 0.70710678 -0.70710678 0" fovy="70"/> <!-- 镖头机载摄像头 -->
+    </body>
+  </worldbody>
+</mujoco>
