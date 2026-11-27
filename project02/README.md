@@ -1,4 +1,4 @@
-# 纯追踪法 · Project02（适配 Project01 v2.6）
+# 纯追踪法 · Project02（适配 Project01 v3.0）
 
 ## 运行
 
@@ -27,4 +27,4 @@ CSV 保留完整 `raw_packet_json` 及展开字段：位置、靶心、速度、
 ## 边界
 
 本次适配保持原七种算法的公式、增益和加速度限幅；不重复施加重力，不修改 Project01 的质量/惯量，不增加主动姿态内环。被动气动参数仍为原联调占位值。状态频率目标 30 Hz，UDP 与物理步异步；无碰撞接触真值或每步施力时刻，CSV 不能单独证明命中或确定实际每步输入。适配验证不是命中率验证。
-官方源码参考：https://github.com/watermelonandlemon/RoboMaster-Mujoco-Simulation/tree/v2.6/project01
+官方源码参考：https://github.com/watermelonandlemon/RoboMaster-Mujoco-Simulation/tree/v3.0/project01
