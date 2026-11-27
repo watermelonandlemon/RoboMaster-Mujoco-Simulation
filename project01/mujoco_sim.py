@@ -1359,8 +1359,13 @@ def run_simulation():
         f"PITCH={DEFAULT_PITCH}°，"
         f"ROLL={DEFAULT_ROLL}°"
     )
+    viewer = mujoco.viewer.launch_passive(
+        model,
+        data,
+        show_left_ui=False,
+        show_right_ui=False
+    )
 
-    viewer = mujoco.viewer.launch_passive(model, data)
     try:
         camera_init(viewer)
         app = DartSimulationApp(
