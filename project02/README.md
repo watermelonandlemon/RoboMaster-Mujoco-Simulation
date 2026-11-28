@@ -1,4 +1,4 @@
-# PN 比例导引 · Project02（适配 Project01 v2.6）
+# PN 比例导引 · Project02（适配 Project01 v3.0）
 
 ## 运行
 
@@ -20,11 +20,11 @@
 
 ## 日志
 
-`logs/<日期时间>_active/run_001.csv`、`logs/<日期时间>_passive/run_001.csv`（若启用），仿真时间回退或识别到仿真进程重启时分表。`config.json` 记录算法参数或被动模型参数；质量、重力和转动惯量为 v2.6 model.xml 中的参考值，不是实时 UDP 读数。
+`logs/<日期时间>_active/run_001.csv`、`logs/<日期时间>_passive/run_001.csv`（若启用），仿真时间回退或识别到仿真进程重启时分表。`config.json` 记录算法参数或被动模型参数；质量、重力和转动惯量为 v3.0 model.xml 中的参考值，不是实时 UDP 读数。
 
 CSV 保留完整 `raw_packet_json` 及展开字段：位置、靶心、速度、姿态、角速度、State 中的加速度、控制器发出的六维量 `command_force_body_*`、接收器缓存 `next_*` 和最近物理步的 `active_force_body/passive_force_body/total_force_body`。另记录仿真时间、接收单调时钟、发送单调时钟、序号、会话、丢帧推断、事件、目标距离以及制导计算诊断。空字段表示未提供/不适用。`passive_command` 行是被动发送时所用最近状态，可能与前一条采样行重复。
 
 ## 边界
 
 本次适配保持原七种算法的公式、增益和加速度限幅；不重复施加重力，不修改 Project01 的质量/惯量，不增加主动姿态内环。被动气动参数仍为原联调占位值。状态频率目标 30 Hz，UDP 与物理步异步；无碰撞接触真值或每步施力时刻，CSV 不能单独证明命中或确定实际每步输入。适配验证不是命中率验证。
-官方源码参考：https://github.com/watermelonandlemon/RoboMaster-Mujoco-Simulation/tree/v2.6/project01
+官方源码参考：https://github.com/watermelonandlemon/RoboMaster-Mujoco-Simulation/tree/v3.0/project01
